@@ -16,5 +16,5 @@ app.get("/sobre", function (req, res) {
 const PORT = process.env.PORT || 8080;
 
 app.listen(PORT);
-console.log(process.env.PORT);
+
 console.log(`Running on ${PORT}`);
