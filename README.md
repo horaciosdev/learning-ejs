@@ -10,5 +10,5 @@ npm install dotenv
 # RUN WITH
 
 ```
-node index.js
+node server.js
 ```
