@@ -10,6 +10,12 @@
         <h1>Node com EJS</h1>
         <p>Vamos aprender a trabalhar com arquivos EJS</p>
       </div>
+
+      <ul>
+        <% lista.forEach((item)=>{ %>
+        <li><strong><%= item.title %></strong> <%= item.message %></li>
+        <% }) %>
+      </ul>
     </main>
 
     <%- include('../partials/footer'); %>

@@ -6,7 +6,17 @@ const app = express();
 app.set("view engine", "ejs");
 
 app.get("/", function (req, res) {
-  res.render("pages/index");
+  const items = [
+    {
+      title: "A",
+      message: "Agora vai.",
+    },
+    {
+      title: "O",
+      message: "Ou talvez não...",
+    },
+  ];
+  res.render("pages/index", { lista: items });
 });
 
 app.get("/sobre", function (req, res) {
